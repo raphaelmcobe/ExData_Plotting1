@@ -12,6 +12,7 @@ date.full <- strptime(date.full, format="%H:%M:%S %Y-%m-%d")
 
 png(file = "plot2.png", width=480, height=480)
 
-plot(date.full, data.subset$Global_active_power, type='l', xlab='', ylab='Global Active Power (kilowatts)')
+plot(date.full, data.subset$Global_active_power, type='l', xlab='', 
+    ylab='Global Active Power (kilowatts)')
 
 dev.off()

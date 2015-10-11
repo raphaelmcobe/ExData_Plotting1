@@ -8,6 +8,7 @@ data.subset <- data[as.Date('2007-02-01') <= data$Date &
 
 png(file = "plot1.png", width=480, height=480)
 
-hist(data.subset$Global_active_power, col='red', main='Global Active Power', xlab='Global Active Power (kilowatts)')
+hist(data.subset$Global_active_power, col='red', main='Global Active Power', 
+    xlab='Global Active Power (kilowatts)')
 
 dev.off()
